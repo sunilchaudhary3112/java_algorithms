@@ -68,18 +68,34 @@ public class Program {
         list.display();*/
 		
 		//Add two List
-		LinkedList list1 = new LinkedList();
-		list1.insertAtBegin(1);
-		list1.insertAtEnd(2);
-		list1.insertAtEnd(3);
-		LinkedList list2 = new LinkedList();
-		list2.insertAtBegin(9);
-		list2.insertAtEnd(9);
-		list2.insertAtEnd(9);
-		LinkedList l3 = new LinkedList();
-		l3.head = l3.addTwoList(list1.head, list2.head);
-		l3.display();
-
+//		LinkedList list1 = new LinkedList();
+//		list1.insertAtBegin(1);
+//		list1.insertAtEnd(2);
+//		list1.insertAtEnd(3);
+//		LinkedList list2 = new LinkedList();
+//		list2.insertAtBegin(9);
+//		list2.insertAtEnd(9);
+//		list2.insertAtEnd(9);
+//		LinkedList l3 = new LinkedList();
+//		l3.head = l3.addTwoList(list1.head, list2.head);
+//		l3.display();
+		
+		//CircularList
+		CircularList CList = new CircularList();
+		//AddNode
+		CList.addNode(1);
+		CList.addNode(2);
+		CList.addNode(3);
+		CList.addNode(4);
+		CList.addNode(5);
+		CList.deleteNodeAtEnd();
+		CList.deleteNodeAtEnd();
+		CList.deleteNodeAtEnd();
+		CList.addNode(3);
+		CList.addNode(4);
+		CList.addNode(5);
+		//Display list
+		CList.display();
 		
 	}
 
