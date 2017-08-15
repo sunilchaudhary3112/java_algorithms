@@ -81,22 +81,36 @@ public class Program {
 //		l3.display();
 		
 		//CircularList
-		CircularList CList = new CircularList();
-		//AddNode
-		CList.addNode(1);
-		CList.addNode(2);
-		CList.addNode(3);
-		CList.addNode(4);
-		CList.addNode(5);
-		CList.deleteNodeAtEnd();
-		CList.deleteNodeAtEnd();
-		CList.deleteNodeAtEnd();
-		CList.addNode(3);
-		CList.addNode(4);
-		CList.addNode(5);
-		//Display list
-		CList.display();
+//		CircularList CList = new CircularList();
+//		//AddNode
+//		CList.addNode(1);
+//		CList.addNode(2);
+//		CList.addNode(3);
+//		CList.addNode(4);
+//		CList.addNode(5);
+//		CList.deleteNodeAtEnd();
+//		CList.deleteNodeAtEnd();
+//		CList.deleteNodeAtEnd();
+//		CList.addNode(3);
+//		CList.addNode(4);
+//		CList.addNode(5);
+//		//Display list
+//		CList.display();
 		
+		//Doubly Linked List
+		DoublyList DList = new DoublyList();
+		DList.addNodeAtBegin(5);
+		DList.addNodeAtBegin(4);
+		DList.addNodeAtBegin(3);
+		DList.addNodeAtBegin(2);
+		DList.addNodeAtBegin(1);
+		DList.display();
+		
+		DList.DeleteNodeAtBegin();
+		DList.DeleteNodeAtBegin();
+		DList.AddNodeAtEnd(6);
+		DList.AddNodeAtEnd(7);
+		DList.display();
 	}
 
 }
